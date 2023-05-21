@@ -25,7 +25,7 @@ Contributing
 We welcome contributions from individuals who would like to add new content, suggest improvements, or provide additional information. Please refer to the Contribution Guidelines for detailed instructions on how to contribute.
 
 Contact
-For any inquiries, feedback, or suggestions, please feel free to reach out to us at [contact-email@example.com].
+For any inquiries, feedback, or suggestions, please feel free to reach out to us at: dz.smart.people@gmail.com
 
 Thank you for visiting webSite and joining us in celebrating the achievements of Algerian scientists!
 
