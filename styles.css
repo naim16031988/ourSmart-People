@@ -1,0 +1,249 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quantico', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #06123B;
+    color:white!important;
+}
+/*navbar styling*/
+.nav-continer {
+    display: flex;
+    justify-content: start;
+    margin: 9px auto 18px 14px;
+    align-items: center;
+    gap: 13px;
+}
+
+.open-button {
+    background-color: #06123B;
+    color: #D9D9D9;
+    font-size: 32px;
+    margin-left:15px;
+  
+}
+.site-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.primary-line {
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+.menu-line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.menu-line1 {
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+/*Colapsed Menu*/
+.colapse-menu {
+    width: 319px;
+    background: linear-gradient(180deg, #08143D 0%, #787D8D 51.04%, #06123B 98.96%);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu-header{
+    display:flex;
+    height:60px;
+    align-items:center;
+    gap:10px;
+}
+.close-menu {
+    width: 42px;
+    height: 39px;
+    background-color: transparent;
+    color: #FFFFFF;
+    display:none;
+}
+
+    .menu-header h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        cursor:pointer;
+    }
+        .menu-header h2:hover {
+            font-size: 25px;
+        }
+        .close-menu{
+            margin-left:10px;
+        }
+        .fa, .fa-times {
+            font-size: 25px;
+            cursor: pointer;
+        }
+            .fa-times:hover {
+                font-size: 30px;
+            }
+            ul{
+                display:block;
+            }
+.menu-continer {
+    display:none;
+}
+
+.menu-continer li {
+    height: 48px;
+    list-style-type: none;
+}
+    .menu-continer li a {
+        font-family: 'Imprima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        text-decoration: none;
+        position: relative;
+        top: 25%;
+        margin-left:54px;
+    }
+        .menu-continer li:hover {
+            background-color:rgba(217, 217, 217, 0.23);
+            border-radius: 7px;
+        }
+            .menu-continer li a:hover{
+                font-size:25px;
+                font-weight:500;
+            }
+            /*disable the navbar*/
+
+            /*Search bar*/
+            .search-bar {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 10px;
+                margin-top:100px;
+                margin: 100px 21px 27px auto;
+                width: 100%;
+            }
+.search-bar input {
+    width: 344px;
+    height: 28px;
+    background: #06123B;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 3px;
+    }
+    .search-bar input {
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding-left: 17px;
+    }
+    .search-btn {
+        width: 28px;
+        height: 28px;
+        border-radius: 3px;
+        background: #608D3D;
+        border: 1px solid rgba(255, 255, 255, 0.65);
+    }
+    /*Articles Design*/
+    .article-container{
+        display:block;
+       
+        margin-top:10px;
+
+    }
+.article {
+    margin-bottom: 23px;
+    margin-top: 10px;
+    margin-left: 30%;
+    }
+.article-header{
+    display:flex;
+    align-content:center;
+    gap:10px;
+    margin-bottom:26px;
+}
+.article-category {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(217, 217, 217, 0.45);
+    border-radius: 5px;
+    padding:2px;
+}
+.published-date {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.article-name {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: #C0D5F6;
+}
+.article-title {
+    color: #6DA4F7;
+}
+/*responsivness*/
+@media only screen and (min-width: 900px) {
+    
+    .open-button{
+        display:none;
+    }
+    .close-menu{
+        display:none;
+    }
+    ul {
+        display: flex;
+    }
+
+    .menu-continer {
+        display: flex;
+        margin-right: 20px;
+        display:unset;
+    }
+    .colapse-menu {
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .open-button {
+        display:none;
+    }
+        .menu-line{
+        display:none;
+    }
+    .menu-line1{
+        display:none;
+    }
+    .menu-continer li{
+        text-align:center;
+    }
+    .menu-continer li a{
+        margin-left:0px;
+    }
+    .menu-continer li{
+        margin-left:20px;
+    }
+}
