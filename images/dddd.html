@@ -1,0 +1,719 @@
+﻿<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0H2B97VQB"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E0H2B97VQB');
+    </script>
+    <!--<script src="../assets/js/color-modes.js"></script>-->
+    <script src="https://kit.fontawesome.com/6b81810417.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      MathJax = {
+    loader: {
+        load: ['[unicodeMath]/unicode-math.js'],
+        paths: {unicodeMath: 'https://cdn.jsdelivr.net/npm/@amermathsoc/mathjax-unicode-math@1/browser'}
+    },
+    tex: {
+        packages: {'[+]': ['unicode-math']}
+    }
+};
+
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cours de mathématiques Vincennes Paris cpge classe préparatoires grandes écoles sujets de concours corrigé articles science">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Cours de Mathématiques Paris Vincennes</title>
+
+    <link rel="canonical" href="https://coursmaths.github.io">
+
+
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle" hidden>
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <!-- <div class="col-4 pt-1">
+                   <a class="link-secondary" href="#">Subscribe</a>
+                 </div>-->
+                <div class="col-12 text-center">
+                    <a class="blog-header-logo text-body-emphasis" href="#">Maths Paris Vincennes</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <!--<a class="link-secondary" href="#" aria-label="Search">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>-->
+                </div>
+            </div>
+        </header>
+
+        <!--<div class="nav-scroller py-1 mb-2">
+          <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" href="#">World</a>
+            <a class="p-2 link-secondary" href="#">U.S.</a>
+            <a class="p-2 link-secondary" href="#">Technology</a>
+            <a class="p-2 link-secondary" href="#">Design</a>
+            <a class="p-2 link-secondary" href="#">Culture</a>
+            <a class="p-2 link-secondary" href="#">Business</a>
+            <a class="p-2 link-secondary" href="#">Politics</a>
+            <a class="p-2 link-secondary" href="#">Opinion</a>
+            <a class="p-2 link-secondary" href="#">Science</a>
+            <a class="p-2 link-secondary" href="#">Health</a>
+            <a class="p-2 link-secondary" href="#">Style</a>
+            <a class="p-2 link-secondary" href="#">Travel</a>
+          </nav>
+        </div>-->
+    </div>
+
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 rounded text-bg-dark" style="background-image: url('DSC_0110.png');background-size: cover;">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Cours de mathématiques</h1>
+                <p class="lead my-3">Je donne des cours particuliers à domicile en mathématiques et physique-chimie, niveau lycée et enseignement supérieur.</p>
+                <p class="lead mb-0"><a href="#présentation" class="text-white fw-bold">Continuer la lecture...</a></p>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Concours Centrale Supelec</strong>
+                        <h3 class="mb-0">mathématiques 2 MP</h3>
+                        <div class="mb-1 text-body-secondary">22 Mai</div>
+                        <p class="card-text mb-auto">Un sujet d'analyse et de probabilité qui se proposait de démontrer un cas particulier du théorème central limite.</p>
+                        <a href="#maths2mpcs23" class="stretched-link">Continuer la lecture</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!--<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="125" viewBox="-250 -250  1000 1000" style="zoom: 1;">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Concours Mines-Ponts</strong>
+                        <h3 class="mb-0">mathématiques 2 PC</h3>
+                        <div class="mb-1 text-body-secondary">8 Mai</div>
+                        <p class="mb-auto">Le sujet sur les chaînes de Markov en temps continu.</p>
+                        <a href="#maths2pcmp23" class="stretched-link">Continuer la lecture</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="125" viewBox="-250 -250  1000 1000" style="zoom: 1;">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-8">
+
+
+                <!--<h3 class="pb-4 mb-4 fst-italic border-bottom">
+                  From the
+                </h3>
+
+                <article class="blog-post" >
+                  <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                  <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+
+
+
+
+                  <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                  <hr>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h2>Blockquotes</h2>
+                  <p>This is an example blockquote in action:</p>
+                  <blockquote class="blockquote">
+                    <p>Quoted text goes here.</p>
+                  </blockquote>
+                  <div class="collapsible">
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Example lists</h3>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                  <ul>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ul>
+                  <p>And this is an ordered list:</p>
+                  <ol>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ol>
+                  <p>And this is a definition list:</p> </div>
+                  <dl>
+                    <dt>HyperText Markup Language (HTML)</dt>
+                    <dd>The language used to describe and define the content of a Web page</dd>
+                    <dt>Cascading Style Sheets (CSS)</dt>
+                    <dd>Used to describe the appearance of Web content</dd>
+                    <dt>JavaScript (JS)</dt>
+                    <dd>The programming language used to build advanced Web sites and applications</dd>
+                  </dl>
+                  <h2>Inline HTML elements</h2>
+                  <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                  <ul>
+                    <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                    <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                    <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                    <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                    <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                    <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                  </ul>
+
+                  <p >Most of these elements are styled by browsers with few modifications on our part.</p>
+
+
+
+                  <h2>Heading</h2>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Sub-heading</h3>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <pre><code>Example code block</code></pre>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+
+                </article>
+
+                <article class="blog-post">
+                  <h2 class="blog-post-title mb-1">Another blog post</h2>
+                  <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <blockquote>
+                    <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                  </blockquote>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Example table</h3>
+                  <p>And don't forget about tables in these posts:</p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Upvotes</th>
+                        <th>Downvotes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Alice</td>
+                        <td>10</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>Bob</td>
+                        <td>4</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>Charlie</td>
+                        <td>7</td>
+                        <td>9</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Totals</td>
+                        <td>21</td>
+                        <td>23</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+
+                <article class="blog-post">
+                  <h2 class="blog-post-title mb-1">New feature</h2>
+                  <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <ul>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ul>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>-->
+                <hr>
+
+                <article class="blog-post" id="maths2mpcs23">
+                    <h2 class="blog-post-title mb-1">Concours Centrale Supelec: mathématiques 2 MP</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-22">22 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+                    <p>Un sujet assez intérressant, cohérent, mêlant analyse et probabilité.</p>
+                    <p>
+                        Il y avait quelques passages assez difficiles:
+                        <ul type=circle>
+                            <li>Les questions 22 à 25, qui permettaient de démontrer la convergence uniforme d'une suite de fonctions  vers la densité de la loi normale \(\mathcal{N}(0,1)\), \(\varphi(t)= \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}\)</li>
+                            <li>
+                                la question 31 permettait de démontrer un cas particulier du théorème central limite. \[\mathrm{P}(\frac{\sum_{i=1}^n X_i}{\sqrt{n}}\geqslant u )\underset{n\to+\infty}{\rightarrow}\int_u^{+\infty} \varphi(t)\mathrm{d} t\]
+                                Les \(X_i\) sont ici des VA indépendantes qui prennent pour valeur -1 ou 1 avec la probabilité \(\frac{1}{2}\).
+                            </li>
+                            <li>La question 33 était une application qui permettait de démontrer un critère de tension.</li>
+                        </ul>
+
+                    <p>On pouvait ainsi observer que la  loi normale est une limite de suite de lois binomiales, ou encore que la loi binomiale est une sorte de discrétisation de la loi normale.</p>
+
+                    <p>En fait le théorème central limite est beaucoup plus puissant, puisque le résultat démontré dans la question 31 s'étend à toute suite de VA indépendantes centrées, de même loi, possédant une variance \(\sigma^2_X\). On dit que la VA \[\frac{\sum_{i=1}^n X_i}{\sqrt{n}}\] converge en loi vers la loi normale  \(\mathcal{N}(0,\sigma^2_X)\).</p>
+                    </p>
+                    <p>Un corrigé de l'épreuve de maths 2 posée le 12 Mai en MP concours Centrale Supelec 2023: <a href="doc/maths2mpcs23.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Retrouver le sujet: <a href="doc/maths2mpcs23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+
+                </article>
+
+
+                <hr>
+
+                <article class="blog-post" id="">
+                    <h2 class="blog-post-title mb-1">Concours Centrale Supelec: mathématiques 2 MP</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-17">17 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+                    <p>La première partie du corrigé du sujet maths 2 MP.</p>
+                    <p>Un corrigé de l'épreuve de maths 2 posée le 12 Mai en MP concours Centrale Supelec 2023: <a href="doc/maths2mpcs23.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Retrouver le sujet: <a href="doc/maths2mpcs23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+
+                </article>
+
+                <hr>
+
+                <article class="blog-post" id="matrixworld">
+                    <h2 class="blog-post-title mb-1">L'univers des matrices</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-17">17 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+                    <p>Il est facile de se perdre dans l'immensité du monde des matrices, les différentes sortes, leurs propriétés, la localisation de leurs valeurs propres,les différentes décompositions possibles qui s'appliquent à chaque catégorie...</p>
+                    <p>Ce génial document créé par Kenji Hiranabe, avec l'aide de Gilbert Strang, permet de visualiser facilement les ensembles de matrices, à la manière des ensembles de nombres \(\mathbb{N}\subset\mathbb{Z}\subset\mathbb{D}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}\). Indispensable. </p>
+                    <p>
+                        <h6>Les ensembles de matrices:</h6>
+                        <div class="ratio ratio-16x9">
+                            <object data="doc/MatrixWorld.pdf" title="Matrix World"></object>
+                        </div>
+                    </p>
+                    <p>
+                        <h6>La localisation des valeurs propres pour différentes catégories de matrices:</h6>
+                        <div class="ratio ratio-16x9">
+                            <object data="doc/MapofEigenvalues.pdf" title="Localisation des valeurs propres"></object>
+                        </div>
+                    </p>
+                    <p>Le fichier complet: <a href="doc/MatrixWorld-2.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Le site Github de Kenji Hiranabe: <a href="https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra" class="fa fa-github" aria-hidden="true" target="_blank"><span></span></a></p>
+
+                </article>
+
+                <hr>
+
+                <article class="blog-post" id="maths2pccs23">
+                    <h2 class="blog-post-title mb-1">Concours Centrale Supelec: mathématiques 2 PC</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-16">16 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+                    <p>On finit cette série de sujets de concours 2023 en section PC par cet interminable sujet, qui part dans a peu près tous les sens: polynômes, programmation python, série entières, sommation des séries doubles pour finir par des probabilités.</p>
+                    <p>A mon sens, il n'y a pas de question qui demandait une réflexion très poussée, plutôt un test de savoir-faire techniques, et en particulier le calcul de sommes, finies ou infinies.</p>
+                    <p>La question 14 a peut-être pu poser des problèmes au candidats</p>
+                    <p>Il fallait être rigoureux pour la justification de la question 41.</p>
+                    <p>Evidemment vu le nombre de questions (41), le but était d'être particulièrement rapide et efficace.</p>
+                    <p>La partie la plus intéressante était la partie I.B, dont le résultat central était la formule \[\sum_{n=0}^{+\infty}n^kx^n = \frac{P_k(x)}{(1-x)^{k+1}} \], où \(P_k\) est un polynôme de degré k.</p>
+                    <p>On peut calculer les coefficients de \(P_k\) dans la base canonique de \(\mathbb{R}[X]\) en utilisant un programme de complexité asymptotique \(O(k^2)\).</p>
+                    <p>Un corrigé de l'épreuve de maths 2 posée le 12 Mai en PC concours Centrale Supelec 2023: <a href="doc/maths2pccs23.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Retrouver le sujet: <a href="doc/maths2pccs23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+
+                </article>
+
+                <hr>
+
+                <article class="blog-post" id="">
+                    <h2 class="blog-post-title mb-1">Concours Centrale Supelec: mathématiques 2 PC</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-15">15 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+                    <p>La première partie du corrigé du (très long) sujet maths 2 PC.</p>
+                    <p>Un corrigé de l'épreuve de maths 2 posée le 12 Mai en PC concours Centrale Supelec 2023: <a href="doc/maths2pccs23.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Retrouver le sujet: <a href="doc/maths2pccs23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+
+                </article>
+
+                <hr>
+
+                <article class="blog-post" id="maths1pccs23">
+                    <h2 class="blog-post-title mb-1">Concours Centrale Supelec: mathématiques 1 PC</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-10">10 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+                    <p>Le sujet était assez dense, avec beaucoup de questions (35 contre par exemple 24 contre le sujet Mines-Ponts 1); toutefois il y a beaucoup de questions relativement simples, ou assorties d'une indication généreuse.</p>
+                    <p>Le sujet portait sur principalement sur le rayon spectral des matrices et proposait une démonstration du théorème de Perron-Frobenius, dans le cas de certaines matrices symétriques positives.</p>
+                    <p>Les matrices étudiées sont positives dans le sens \[\forall (i,j)\in \lBrack 1,n\rBrack^2,\quad A_{ij} \geqslant 0 \], et non pas de le sens de la positivité de la forme quadratique \(\ X^TAX\)</p>
+                    <p>
+                        Les résultats démontrés s'étendent aux matrices \(A>0\) (non nécéssairement symétriques):
+                        <ul type=circle>
+                            <li>\(\mathrm{sp}(A)=\lambda\)>0 est une valeur propre de \(A\), associée à une vecteur propre \(X>0\)</li>
+                            <li>\(\mathrm{dim}(\ker(A-\lambda I_n))=1\)</li>
+                            <li>\(\lambda\) est dominante: toute autre valeur propre \(\mu\) de \(A\) dans \(\mathbb{C}\) vérifie \(\lvert\mu\rvert<\lambda\).</li>
+                        </ul>
+                    </p>
+                    <p>Le théorème de Perron-Frobenius a de nombreuses applications en ingénierie et en économie, parmi lesquelles l'algorithme PageRank du moteur de recherche Google.</p>
+                    <p>Un corrigé complet de l'épreuve de maths 1 posée le 9 Mai en PC concours Centrale Supelec 2023: <a href="doc/maths1pccs23.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Retrouver le sujet: <a href="doc/maths1pccs23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+
+                </article>
+                <hr>
+
+                <article class="blog-post" id="maths2pcmp23">
+                    <h2 class="blog-post-title mb-1">Concours Mines-Ponts: mathématiques 2 PC</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-08">8 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+
+                    <p>Le sujet portait sur les chaînes de Markov. On modélisait un système discret, avec le nombre de transitions dans l'intervalle \([0,t]\) qui suivait une loi de Poisson. Pas mal de calculs de sommes un peu délicats, mais le sujet paraissait un peu plus simple que le 1er, en tout cas plus classique.</p>
+                    <p>On retrouvait les matrices symétriques positives, sous la forme des endomorphismes autoadjoints positifs, ce qui était un peu redondant avec le sujet 1.</p>
+                    <p>
+                        La question 18 était le résultat fondamental de la dernière partie, et permettait de déterminer dans la question 21 que le la loi de probabilité du système se stabilisait après un temps suffisamment long:
+                        \[\forall j\in \lBrack 1,N\rBrack,\quad \lim_{t\to+\infty} H_t[1,j] =  \pi(j) \], où
+                        <ul type=circle>
+                            <li>\(H_t[1,j]\) est la probabilité que le système soit dans l'état \(j\) à l'instant \(t\)</li>
+                            <li>\(\pi\) est la probabilité invariante de la matrice de transition \(K\) (vecteur propre à gauche associé à la valeur propre 1).</li>
+                        </ul>
+                    </p>
+                    <p>Un corrigé complet de l'épreuve de maths 2 posée le 3 Mai en PC concours Mines-Ponts 2023: <a href="doc/maths2pc2023.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                    <p>Retrouver le sujet: <a href="doc/maths2pcmp23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                </article>
+                <hr>
+                <article class="blog-post" id="maths1pcmp23">
+                    <h2 class="blog-post-title mb-1">Concours Mines-Ponts: mathématiques 1 PC</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-02">2 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+
+                    <p>Le thème du sujet était la convexité, mais faisait intervenir beaucoup d'algèbre avec des manipulations de matrices symétriques positives.</p>
+                    <p>La partie 5 était assez intérressante avec un mélange d'analyse et d'algèbre. On demandait de dériver des fonctions matricielles, notamment la trace. </p>
+                    <p>Les questions qui pouvaient peut-être poser le plus de difficultés étaient</p>
+                    <ul type=circle>
+                        <li>
+                            la question 8, où il fallait décomposer simultanément deux matrices symétriques.
+                            \[\forall A\in S_n^{++}(\mathbb{R}),B\in S_n(\mathbb{R}),\quad A=QQ^T B=QDQ^T\] avec \(Q\in GL_n(\mathbb{R})\) et \(D\) diagonale.
+                        </li>
+                        <li>la question 18. A partir d'un DL en 0, on pouvait décaler l'origine des t pour obtenir la dériver au voisinage de 0.</li>
+                        <li>la question 23: il fallait démonter la positivité d'une expression  qui s'avérait être quadratique; on pouvait donc faire intervenir une matrice symétrique pour utiliser un résultat précédent.</li>
+                    </ul>
+                    <p>
+                        Un corrigé de l'épreuve de maths 1 posée le 2 Mai en PC: <a href="maths1pc2023.pdf"
+                                                                                    class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a>
+                    </p>
+                    <p>Retrouver le sujet: <a href="doc/maths1pcmp23_sj.pdf" class="fa fa-file-pdf" aria-hidden="true" target="_blank"><span></span></a></p>
+                </article>
+
+                <hr>
+
+                <article class="blog-post" id="présentation">
+                    <h2 class="blog-post-title mb-1">Cours de Mathématiques</h2>
+                    <p class="blog-post-meta"><time datetime="2023-05-02">2 Mai, 2023</time> par <a href="#">Pierre-Paul T.</a></p>
+
+                    <p>
+                        Je donne des cours particuliers à domicile en mathématiques et physique-chimie, niveau lycée et enseignement supérieur.
+                        J'ai plus de 10 ans d'expérience dans les cours particuliers et l'enseignement,
+                        des résultats probants, un bon contact avec les élèves et une pédagogie adaptée en fonction du profil de l'élève.
+                        Je m'adresse aux élèves en difficulté aussi bien qu'aux élèves souhaitant se perfectionner en vue d'études exigeantes.
+                    </p>
+
+                    <p>J'aime les Mathématiques et j'aime transmettre cette passion.</p>
+                    <div class="collapsible">
+                        <p>J'ai une formation d'Ingénieur SUPELEC (aujourd'hui CentraleSupelec), j'ai effectué mes classes préparatoires MP* au lycée Thiers à Marseille.</p>
+
+                        <table class="table table-striped table-hover styled-table1">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Niveau</th>
+                                    <th scope="col">Tarif horaire</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Lycée</th>
+                                    <td>45 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Supérieur</th>
+                                    <td>60 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <p>
+                            Possibilité de bénéficier d'un crédit d'impôt de 50%, sur le montant de l'heure de cours, pour un forfait de 5 fois 2 heures.
+                            Les foyers non imposables peuvent aussi bénéficier de ce crédit d'impôt.
+                        </p>
+
+                        <table class="table table-striped table-hover styled-table1">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Niveau</th>
+                                    <th scope="col">Tarif horaire après déduction fiscale</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Lycée</th>
+                                    <td>22.50 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Supérieur</th>
+                                    <td>30 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <p>cours webcam possible.</p>
+
+
+                        <p>J'habite à Vincennes et me déplace Paris, petite couronne voire au-delà.</p>
+                        <p>N'hésitez pas à me contacter par <a href="form.html" target="_blank">email</a> ou via <a href="https://www.superprof.fr/ingenieur-supelec-donne-cours-mathematiques-physique-chimie-secondaire-euros-enseignement-superieur-euros.html" target="_blank">Superprof</a>  pour tout renseignement et demande de cours.</p>
+
+                        <p>
+                            +10 ans d’expérience dans l'enseignement.
+                            Élèves suivis sur le long terme, jusqu’à 3 années scolaires.
+                        </p>
+
+                        <p>College et Lycée (Mathématiques, Physique Chimie)</p>
+
+                        <p>Enseignement supérieur: Ecole d'ingénieurs, Prépas MP PC HEC PSI BCPST, université...  (Mathématiques).</p>
+                    </div>
+                </article>
+                <hr>
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Twitter timeline</h2>
+                    <p class="blog-post-meta">2 Mai 2023 par <a href="#">Pierre-Paul T.</a></p>
+
+                    <div id="widget">
+                        <a class="twitter-timeline" display='inline-block' href="https://twitter.com/coursmathsparis?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by coursmathsparis</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </article>
+
+                <nav class="blog-pagination" aria-label="Pagination">
+                    <a class="btn btn-outline-primary rounded-pill" href="#">Plus ancients</a>
+                    <a class="btn btn-outline-secondary rounded-pill disabled">Plus récents</a>
+                </nav>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-body-tertiary rounded">
+                        <h4 class="fst-italic">A propos</h4>
+                        <p class="mb-0">Bienvenue sur le site ! Je vais y poster au fur et à mesure des contenus pédagogiques.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Archives</h4>
+                        <!-- <ol class="list-unstyled mb-0">
+                           <li><a href="#">March 2021</a></li>
+                           <li><a href="#">February 2021</a></li>
+                           <li><a href="#">January 2021</a></li>
+                           <li><a href="#">December 2020</a></li>
+                           <li><a href="#">November 2020</a></li>
+                           <li><a href="#">October 2020</a></li>
+                           <li><a href="#">September 2020</a></li>
+                           <li><a href="#">August 2020</a></li>
+                           <li><a href="#">July 2020</a></li>
+                           <li><a href="#">June 2020</a></li>
+                           <li><a href="#">May 2020</a></li>
+                           <li><a href="#">April 2020</a></li>
+                         </ol>-->
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Ailleurs</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="https://github.com/pptacher" target="_blank">GitHub</a></li>
+                            <li><a href="https://twitter.com/coursmathsparis" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.superprof.fr/ingenieur-supelec-donne-cours-mathematiques-physique-chimie-secondaire-euros-enseignement-superieur-euros.html" target="_blank">Superprof</a></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="container-fluid tweet text-center">
+        <div class="row"><blockquote>&ldquo;Ο το μεν σώμα υγιής, την δε ψυχήν εύπορος, την δε φύσιν ευπαίδευτος.&rdquo;</blockquote></div>
+    </div>
+
+    <footer class="blog-footer">
+        <section>
+            <header>
+                <h3>Contact</h3>
+            </header>
+            <ul class="contact">
+                <li><a href="https://github.com/pptacher" class="fa fa-github" target="_blank"><span>Github</span></a></li>
+                <li><a href="https://twitter.com/coursmathsparis" class="fa fa-twitter" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="form.html" class="fa fa-envelope" aria-hidden="true"><span>Mail</span></a></li>
+                <!--< <li><a href="form.html" class="fab fa-discord" aria-hidden="true" ><span>Mail</span></a></li>-->
+            </ul>
+        </section>
+        <p>Image: <a class="fa-brands fa-unsplash" href="https://unsplash.com/@waqvr?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" aria-hidden="true" target="_blank"><span>Unsplash</span></a></p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+
+
+</body>
+<script>
+        document.querySelectorAll(".collapsible").forEach(function(current) {
+
+    let toggler = document.createElement("div");
+    toggler.className = "toggler";
+    current.appendChild(toggler);
+
+    toggler.addEventListener("click", function(e) {
+      current.classList.toggle("open");
+    }, false);
+
+  });
+</script>
+</html>

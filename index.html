@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title></title>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="colapse-menu">
+                <div class="menu-header">
+                    <div class="open-button" onclick="openMenu()" id="openButton">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <button class="close-menu"  onclick="closeMenu()" id="closeButton">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <h2> Our Smart People</h2>
+                </div>
+                <hr class="menu-line1"/>
+                <div class="menu-continer" id="menu-continer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                        <hr class="menu-line" />
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                               News</a>
+                        </li>
+                        <hr class="menu-line" />
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+
+                                Profiles
+                            </a>
+                        </li>
+                        <hr class="menu-line" />
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-microphone" aria-hidden="true"></i>
+                                Interview
+                            </a>
+                        </li>
+                        <hr class="menu-line" />
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                Events
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+         
+
+        </nav>
+        <div class="search-bar">
+            <label for="site-search"></label>
+            <input type="search" id="site-search" value="Search" name="q">
+
+            <button class="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+        <hr class="primary-line" />
+    </header>
+    <article class="article-container">
+        <article class="article article1">
+            <div class="article-header">
+                <div class="article-category">
+                    Profile
+                </div>
+                <p class="published-date">Mai 21, 2023</p>
+            </div>
+            <img src="./images/ahmed-zewail.png" alt="Ahmed Zewail picture" />
+            <h2 class="article-name">
+                Ahmed Zewail:
+                <span class="article-title"> Most known Algerian Scientist.</span>
+            </h2>
+            <p class="article-text"></p>
+            
+
+        </article>
+        <hr class="primary-line" />
+        <article class="article article2">
+            <div class="article-header">
+                <div class="article-category">
+                    Profile
+                </div>
+                <p class="published-date">Mai 21, 2023</p>
+            </div>
+            <img src="./images/rachid-yazami.png" alt="Rachid Yazami picture" />
+            <h2 class="article-name">
+                Rachid Yazami:
+                <span class="article-title">battery technology and energy storage.</span>
+
+            </h2>
+            <p class="article-text"></p>
+        </article>
+        <hr class="primary-line" />
+
+        <article class="article article3">
+            <div class="article-header">
+                <div class="article-category">
+                    Profile
+                </div>
+                <p class="published-date">Mai 21, 2023</p>
+            </div>
+            <img src="./images/fatiha-benmokhtar.png" alt="Fatiha Ben Mokhtar picture" />
+            <h2 class="article-name">
+                Fatiha Benmokhtar:
+                <span class="article-title">Fermilab and CERN</span>
+            </h2>
+            <p class="article-text"></p>
+        </article>
+        <hr class="primary-line" />
+
+    </article>
+    
+
+    <script>
+        let menuContiner = document.getElementById("menu-continer");
+        let openButton = document.getElementById("openButton");
+        let closeButton = document.getElementById("closeButton");
+        
+        function openMenu() {
+            menuContiner.style.display = "unset";
+            openButton.style.display = "none";
+            closeButton.style.display = "unset";
+            console.log("open");
+        }
+        function closeMenu() {
+            console.log("close");
+
+            menuContiner.style.display = "none";
+            closeButton.style.display = "none";
+            openButton.style.display = "unset";
+        }
+        
+    </script>
+    <footer>
+    </footer>
+
+</body>
+</html>
