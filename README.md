@@ -1,5 +1,5 @@
 # ourSmart-People
-a web site to algerian smart invintor and scientist. 
+a web site to algerian smart invintor and scientist. https://jolly-gumdrop-dbb9f7.netlify.app
 
 Algeria, a nation known for its rich cultural heritage and historical significance, is also home to a multitude of brilliant minds in
 the field of science. Algerian scientists have made remarkable contributions to various disciplines, both within the country and on the
